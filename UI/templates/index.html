@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Italy Travel Recommend system</title>
+    <style>
+    @font-face {
+    font-family: 'hi';
+    src: url("static/Slimbits.ttf") format('truetype');
+    }
+    .test{
+     font-family: 'hi';
+     letter-spacing:5px
+    }
+    input.lcb { 
+            width: 15px; 
+            height: 15px; 
+        }
+    .a{ font-size:25px;}
+    body {
+      background-image: url('static/images.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: cover;
+    }
+	.feature:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+	opacity: 1.0;
+	}
+	.feature {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+	opacity: 1.0;
+	}
+	form {
+	opacity: 0.01;
+	}
+	form:hover {
+	opacity: 1.0;
+	}
+	
+    </style>
+</head>
+<body>
+    <form method="POST">
+    <div class="test">
+    <center><h1 style = "font-size:50px;color:white">Define your travel destination in Italy:</h1></center>
+		<div class="feature">
+        <center>
+		<p style = "font-size:30px;color:#eeaf61"><b>nature</b></p>
+        <input type="checkbox" class="lcb" id="nature1" name="beach" value="Beach">
+        <label for="nature1" class="a" style="color:#eeaf61";> <b>beach</b></label>
+        <input type="checkbox" class="lcb" id="nature2" name="lake" value="Lake">
+        <label for="nature2" class="a" style="color:#eeaf61"> <b>lake</b></label>
+        <input type="checkbox" class="lcb" id="nature3" name="river" value="River">
+        <label for="nature3" class="a" style="color:#eeaf61"> <b>river</b></label>
+        <input type="checkbox" class="lcb" id="nature4" name="sea" value="Sea">
+        <label for="nature4" class="a" style="color:#eeaf61" > <b>sea</b></label>
+        <input type="checkbox" class="lcb" id="nature5" name="waterfall" value="Waterfall">
+        <label for="nature5" class="a" style="color:#eeaf61"> <b>waterfall</b></label>
+        <input type="checkbox" class="lcb" id="nature6" name="hills" value="Hills">
+        <label for="nature6" class="a" style="color:#eeaf61"> <b>hills</b></label>
+        <input type="checkbox" class="lcb" id="nature7" name="mountain" value="Mountain">
+        <label for="nature7" class="a" style="color:#eeaf61"><b>mountain</b></label>
+        <input type="checkbox" class="lcb" id="nature8" name="volcanic" value="Volcanic">
+        <label for="nature8" class="a" style="color:#eeaf61"> <b>volcanic</b></label>
+		</center>
+		</div>
+		<div class="feature">
+		<center>
+        <p style = "font-size:30px;color:#d69d57"><b>history</b></p>
+        <input type="checkbox" class="lcb" id="history1" name="history" value="History">
+        <label for="history1" class="a" style = "color:#d69d57"> <b>history</b></label>
+        <input type="checkbox" class="lcb" id="history2" name="ancient" value="Ancient">
+        <label for="history2" class="a" style = "color:#d69d57"><b>ancient</b></label>
+        <input type="checkbox" class="lcb" id="history3" name="archeology" value="Archeology">
+        <label for="history3" class="a" style = "color:#d69d57"> <b>archeology</b></label>
+        <input type="checkbox" class="lcb" id="history4" name="gothic" value="Gothic">
+        <label for="history4" class="a" style = "color:#d69d57"> <b>gothic</b></label>
+        <input type="checkbox" class="lcb" id="history5" name="medieval" value="Medieval">
+        <label for="history5" class="a" style = "color:#d69d57"> <b>medieval</b></label>
+        <input type="checkbox" class="lcb" id="history6" name="renaissance" value="Renaissance">
+        <label for="history6" class="a" style = "color:#d69d57"> <b>renaissance</b></label>
+        <input type="checkbox" class="lcb" id="history7" name="oldtown" value="Oldtown">
+        <label for="history7" class="a" style = "color:#d69d57"> <b>oldtown</b></label>
+        <input type="checkbox" class="lcb" id="history8" name="ruins" value="Ruins"> 
+        <label for="history8" class="a" style = "color:#d69d57"><b>ruins</b></label>
+		</center>
+		</div>
+		<div class="feature">
+		<center>
+        <p style = "font-size:30px;color:#faa24d"><b>architecture</b></p>
+        <input type="checkbox" class="lcb"  id="architecture1" name="architecture" value="Architecture">
+        <label for="architecture1" class="a" style = "color:#faa24d"> <b>architecture</b></label>
+        <input type="checkbox" class="lcb" id="architecture2" name="bridge" value="Cridge">
+        <label for="architecture2" class="a" style = "color:#faa24d"> <b>bridge</b></label> 
+        <input type="checkbox" class="lcb" id="architecture3" name="cathedral" value="Cathedral">
+        <label for="architecture3" class="a" style = "color:#faa24d"> <b>cathedral</b></label>
+        <input type="checkbox" class="lcb" id="architecture4" name="church" value="Church">
+        <label for="architecture4" class="a" style = "color:#faa24d"> <b>church</b></label>
+        <input type="checkbox" class="lcb" id="architecture5" name="fountain" value="Fountain">
+        <label for="architecture5" class="a" style = "color:#faa24d"> <b>fountain</b></label>
+        <input type="checkbox" class="lcb" id="architecture6" name="garden" value="Garden">
+        <label for="architecture6" class="a" style = "color:#faa24d"> <b>garden</b></label>
+        <input type="checkbox" class="lcb" id="architecture7" name="monument" value="Monument">
+        <label for="architecture7" class="a" style = "color:#faa24d"><b>monument</b></label>
+        <input type="checkbox" class="lcb" id="architecture8" name="square" value="Square">
+        <label for="architecture8" class="a" style = "color:#faa24d"> <b>square</b></label>
+        <input type="checkbox" class="lcb" id="architecture9" name="temple" value="Temple">
+        <label for="architecture9" class="a" style = "color:#faa24d"> <b>temple</b></label>
+        <input type="checkbox" class="lcb" id="architecture10" name="tower" value="Tower">
+        <label for="architecture10" class="a" style = "color:#faa24d"> <b>tower</b></label>
+		</center>
+		</div>
+		<div class="feature">
+		<center>		
+        <p style = "font-size:30px;color:#f87b02"><b>activities</b></p>
+        <input type="checkbox" class="lcb" id="activity1" name="hiking" value="Hiking">
+        <label for="activity1" class="a" style = "color:#f87b02"> <b>hiking</b></label> 
+        <input type="checkbox" class="lcb" id="activity2" name="sailing" value="Sailing">
+        <label for="activity2" class="a" style = "color:#f87b02"> <b>sailing</b></label>
+        <input type="checkbox" class="lcb" id="activity3" name="swimming" value="Swimming">
+        <label for="activity3" class="a" style = "color:#f87b02"><b> swimming</b></label>
+        <input type="checkbox" class="lcb" id="activity4" name="fashion" value="Fashion">
+        <label for="activity4" class="a" style = "color:#f87b02"> <b>fashion</b></label>
+        <input type="checkbox" class="lcb" id="activity5" name="luxury" value="Luxury">
+        <label for="activity5" class="a" style = "color:#f87b02"> <b>luxury</b></label>
+        <input type="checkbox" class="lcb" id="activity6" name="food" value="Food">
+        <label for="activity6" class="a" style = "color:#f87b02"> <b>food</b></label>
+        <input type="checkbox" class="lcb" id="activity7" name="restaurant" value="Restaurant">
+        <label for="activity7" class="a" style = "color:#f87b02"><b>restaurant</b></label>
+        <input type="checkbox" class="lcb" id="activity8" name="wine" value="Wine">
+        <label for="activity8" class="a" style = "color:#f87b02"><b>wine</b></label>
+		</center>
+		</div>
+		<div class="feature">
+		<center>
+        <p style = "font-size:30px;color:#f89e02"><b>culture</b></p>
+        <input type="checkbox" class="lcb" id="culture1" name="culture" value="Culture">
+        <label for="culture1" class="a" style = "color:#f89e02"><b>culture</b></label>
+        <input type="checkbox" class="lcb" id="culture2" name="aesthetic" value="Aesthetic">
+        <label for="culture2" class="a"style = "color:#f89e02"><b>aesthetic</b></label>
+        <input type="checkbox" class="lcb" id="culture3" name="art" value="Art">
+        <label for="culture3" class="a"style = "color:#f89e02"><b>art</b></label>
+        <input type="checkbox" class="lcb" id="culture4" name="music" value="Music">
+        <label for="culture4" class="a"style = "color:#f89e02"><b>music</b></label>
+		</center>
+		</div>
+		<div class="feature">
+		<center>
+        <p style = "font-size:30px;color:#f05705"><b>district</b></p>
+        <input type="checkbox" class="lcb" id="district1" name="city" value="City">
+        <label for="district1" class="a" style = "color:#f05705"><b>city</b></label>
+        <input type="checkbox" class="lcb" id="district2" name="village" value="Village">
+        <label for="district2" class="a"style = "color:#f05705"><b>village</b></label>
+		</center>
+		</div>
+		<div class="feature">
+		<center>
+        <p style = "font-size:30px;color:#dbaa21"><b>merits</b></p>
+        <input type="checkbox" class="lcb" id="merits1" name="hiddengem" value="Hiddengem">
+        <label for="merits1" class="a" style = "color:#dbaa21"><b>hiddengem</b></label>
+        <input type="checkbox" class="lcb" id="merits1" name="unesco" value="UNESCO">
+        <label for="merits2" class="a" style = "color:#dbaa21"><b>unesco</b></label><br>
+		</center>
+		</div>
+		<br>
+		<br>
+        <center><input type="submit" value="Recommend" class="test feature" style="width:20%;height:80px;font-size:40px;"/></center>
+    </form>
+</div>
+</body>
+</html>
